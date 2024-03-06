@@ -2,16 +2,6 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const WholesellerSchema = new Schema({
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Category",
-    required: true,
-  },
-  product: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Product",
-    required: true,
-  },
   name: {
     type: String,
     required: true,
